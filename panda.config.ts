@@ -1,6 +1,7 @@
 import { defineConfig } from "@pandacss/dev";
 import { buttonRecipe } from "recipes/button.recipe";
 import { defaultTheme } from "themes/default";
+import { textStyles } from "themes/textStyles";
 
 export default defineConfig({
   // Whether to use css reset
@@ -22,7 +23,10 @@ export default defineConfig({
       recipes: {
         button: buttonRecipe,
       },
-      ...defaultTheme,
+      textStyles: textStyles,
+      tokens: {
+        ...defaultTheme.tokens,
+      },
     },
   },
 });

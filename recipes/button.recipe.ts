@@ -16,8 +16,8 @@ export const buttonRecipe = defineRecipe({
       edgy: { border: "1px solid {colors.red.500}" },
     },
     size: {
-      sm: { padding: "4", fontSize: "12px" },
-      lg: { padding: "8", fontSize: "40px" },
+      sm: { padding: "4", textStyle: "5xl" },
+      lg: { padding: "8", textStyle: "title-40-400" },
     },
     shape: {
       square: { borderRadius: "0" },

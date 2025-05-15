@@ -691,7 +691,6 @@
 
 @layer recipes{
   @layer _base{
-
     .button {
       display: flex;
 }
@@ -705,7 +704,8 @@
 
   .button--size_sm {
     padding: var(--spacing-4);
-    font-size: 12px;
+    font-size: 3rem;
+    line-height: 1;
 }
 
   .button--shape_circle {
@@ -714,7 +714,6 @@
 }
 
 @layer utilities{
-
   .c_red {
     color: red;
 }
