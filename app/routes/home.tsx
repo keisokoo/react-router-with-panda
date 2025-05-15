@@ -16,7 +16,7 @@ export default function Home() {
         className={css({
           fontSize: "2xl",
           fontWeight: "bold",
-          color: "red",
+          color: "figma.Grayscale/Gray400",
           textStyle: "Title/24px/24px.700",
         })}
       >

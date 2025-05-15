@@ -713,6 +713,7 @@
 
 @layer recipes{
   @layer _base{
+
     .button {
       display: flex;
 }
@@ -742,6 +743,7 @@
 
 @layer utilities{
   @layer compositions{
+
     .textStyle_Title\/24px\/24px\.700 {
       letter-spacing: -0.4px;
       text-decoration: None;
@@ -755,6 +757,10 @@
 
   .c_red {
     color: red;
+}
+
+  .c_figma\.Grayscale\/Gray400 {
+    color: var(--colors-figma--grayscale\/-gray400);
 }
 
   .fs_2xl {
