@@ -13,7 +13,12 @@ export default function Home() {
   return (
     <div>
       <h1
-        className={css({ fontSize: "2xl", fontWeight: "bold", color: "red" })}
+        className={css({
+          fontSize: "2xl",
+          fontWeight: "bold",
+          color: "red",
+          textStyle: "Title/24px/24px.700",
+        })}
       >
         Welcome to the home sdssssxx22
       </h1>

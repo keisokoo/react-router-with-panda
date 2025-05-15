@@ -194,8 +194,8 @@ export interface UtilityValues {
 	srOnly: boolean;
 	debug: boolean;
 	containerName: CssProperties["containerName"];
-	colorPalette: "current" | "black" | "white" | "transparent" | "rose" | "pink" | "fuchsia" | "purple" | "violet" | "indigo" | "sky" | "cyan" | "teal" | "emerald" | "lime" | "amber" | "orange" | "neutral" | "stone" | "zinc" | "gray" | "slate" | "grayscale" | "primary" | "red" | "green" | "yellow" | "blue";
-	textStyle: "xs" | "sm" | "md" | "lg" | "xl" | "2xl" | "3xl" | "4xl" | "5xl" | "6xl" | "7xl" | "8xl" | "9xl" | "title-60-700" | "title-40-400" | "title-40-700" | "title-32-400" | "title-32-700" | "title-24-400" | "title-24-700" | "title-18-400" | "title-18-700" | "body-16-400" | "body-16-500" | "body-16-700" | "body-14-400" | "body-14-500" | "body-14-700" | "body-12-400" | "body-12-500" | "body-12-700";
+	colorPalette: "current" | "black" | "white" | "transparent" | "rose" | "pink" | "fuchsia" | "purple" | "violet" | "indigo" | "blue" | "sky" | "cyan" | "teal" | "emerald" | "green" | "lime" | "yellow" | "amber" | "orange" | "red" | "neutral" | "stone" | "zinc" | "gray" | "slate" | "figma";
+	textStyle: "xs" | "sm" | "md" | "lg" | "xl" | "2xl" | "3xl" | "4xl" | "5xl" | "6xl" | "7xl" | "8xl" | "9xl" | "Title/60px.700" | "Title/40px/40px.400" | "Title/40px/40px.700" | "Title/32px/32px.400" | "Title/32px/32px.700" | "Title/24px/24px.400" | "Title/24px/24px.700" | "Title/18px/18px.400" | "Title/18px/18px.700" | "Body/16px/16px.400" | "Body/16px/16px.500" | "Body/16px/16px.700" | "Body/14px/14px.400" | "Body/14px/14px.500" | "Body/14px/14px.700" | "Body/12px/12px.400" | "Body/12px/12px.500" | "Body/12px/12px.700";
 }
 
 
