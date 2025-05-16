@@ -1,7 +1,7 @@
 import { defineTextStyles } from "@pandacss/dev";
 
 export const textStyles = defineTextStyles({
-  "Title/60px.700": {
+  "title-60-700": {
     description: "Large title text with bold weight",
     value: {
       fontFamily: "Inter",
@@ -13,7 +13,7 @@ export const textStyles = defineTextStyles({
       textTransform: "None",
     },
   },
-  "Title/40px/40px.400": {
+  "title-40-400": {
     description: "Medium title text with regular weight",
     value: {
       fontFamily: "Inter",
@@ -25,7 +25,7 @@ export const textStyles = defineTextStyles({
       textTransform: "None",
     },
   },
-  "Title/40px/40px.700": {
+  "title-40-700": {
     description: "Medium title text with bold weight",
     value: {
       fontFamily: "Inter",
@@ -37,7 +37,7 @@ export const textStyles = defineTextStyles({
       textTransform: "None",
     },
   },
-  "Title/32px/32px.400": {
+  "title-32-400": {
     description: "Small title text with regular weight",
     value: {
       fontFamily: "Inter",
@@ -49,7 +49,7 @@ export const textStyles = defineTextStyles({
       textTransform: "None",
     },
   },
-  "Title/32px/32px.700": {
+  "title-32-700": {
     description: "Small title text with bold weight",
     value: {
       fontFamily: "Inter",
@@ -61,7 +61,7 @@ export const textStyles = defineTextStyles({
       textTransform: "None",
     },
   },
-  "Title/24px/24px.400": {
+  "title-24-400": {
     description: "Subtitle text with regular weight",
     value: {
       fontFamily: "Inter",
@@ -73,7 +73,7 @@ export const textStyles = defineTextStyles({
       textTransform: "None",
     },
   },
-  "Title/24px/24px.700": {
+  "title-24-700": {
     description: "Subtitle text with bold weight",
     value: {
       fontFamily: "Inter",
@@ -85,7 +85,7 @@ export const textStyles = defineTextStyles({
       textTransform: "None",
     },
   },
-  "Title/18px/18px.400": {
+  "title-18-400": {
     description: "Small subtitle text with regular weight",
     value: {
       fontFamily: "Inter",
@@ -97,7 +97,7 @@ export const textStyles = defineTextStyles({
       textTransform: "None",
     },
   },
-  "Title/18px/18px.700": {
+  "title-18-700": {
     description: "Small subtitle text with bold weight",
     value: {
       fontFamily: "Inter",
@@ -109,7 +109,7 @@ export const textStyles = defineTextStyles({
       textTransform: "None",
     },
   },
-  "Body/16px/16px.400": {
+  "body-16-400": {
     description: "Default body text with regular weight",
     value: {
       fontFamily: "Inter",
@@ -121,7 +121,7 @@ export const textStyles = defineTextStyles({
       textTransform: "None",
     },
   },
-  "Body/16px/16px.500": {
+  "body-16-500": {
     description: "Default body text with medium weight",
     value: {
       fontFamily: "Inter",
@@ -133,7 +133,7 @@ export const textStyles = defineTextStyles({
       textTransform: "None",
     },
   },
-  "Body/16px/16px.700": {
+  "body-16-700": {
     description: "Default body text with bold weight",
     value: {
       fontFamily: "Inter",
@@ -145,7 +145,7 @@ export const textStyles = defineTextStyles({
       textTransform: "None",
     },
   },
-  "Body/14px/14px.400": {
+  "body-14-400": {
     description: "Small body text with regular weight",
     value: {
       fontFamily: "Inter",
@@ -157,7 +157,7 @@ export const textStyles = defineTextStyles({
       textTransform: "None",
     },
   },
-  "Body/14px/14px.500": {
+  "body-14-500": {
     description: "Small body text with medium weight",
     value: {
       fontFamily: "Inter",
@@ -169,7 +169,7 @@ export const textStyles = defineTextStyles({
       textTransform: "None",
     },
   },
-  "Body/14px/14px.700": {
+  "body-14-700": {
     description: "Small body text with bold weight",
     value: {
       fontFamily: "Inter",
@@ -181,7 +181,7 @@ export const textStyles = defineTextStyles({
       textTransform: "None",
     },
   },
-  "Body/12px/12px.400": {
+  "body-12-400": {
     description: "Extra small body text with regular weight",
     value: {
       fontFamily: "Inter",
@@ -193,7 +193,7 @@ export const textStyles = defineTextStyles({
       textTransform: "None",
     },
   },
-  "Body/12px/12px.500": {
+  "body-12-500": {
     description: "Extra small body text with medium weight",
     value: {
       fontFamily: "Inter",
@@ -205,7 +205,7 @@ export const textStyles = defineTextStyles({
       textTransform: "None",
     },
   },
-  "Body/12px/12px.700": {
+  "body-12-700": {
     description: "Extra small body text with bold weight",
     value: {
       fontFamily: "Inter",

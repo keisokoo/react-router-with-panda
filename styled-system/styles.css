@@ -634,44 +634,44 @@
     --colors-slate-800: #1e293b;
     --colors-slate-900: #0f172a;
     --colors-slate-950: #020617;
-    --colors-figma--grayscale\/-white: #ffffff;
-    --colors-figma--grayscale\/-gray50: #f7f8f9;
-    --colors-figma--grayscale\/-gray100: #e8ebed;
-    --colors-figma--grayscale\/-gray200: #c9cdd2;
-    --colors-figma--grayscale\/-gray300: #9ea4aa;
-    --colors-figma--grayscale\/-gray400: #72787f;
-    --colors-figma--grayscale\/-gray500: #4d5053;
-    --colors-figma--grayscale\/-gray600: #3d4043;
-    --colors-figma--grayscale\/-black: #1b1d1f;
-    --colors-figma--primary\/-primary50: #f8f5ff;
-    --colors-figma--primary\/-primary100: #e2d6ff;
-    --colors-figma--primary\/-primary200: #c8acff;
-    --colors-figma--primary\/-primary500: #894fff;
-    --colors-figma--primary\/-primary600: #6d35de;
-    --colors-figma--primary\/-primary700: #5221b5;
-    --colors-figma--red\/-red50: #fef3f2;
-    --colors-figma--red\/-red100: #ffeaea;
-    --colors-figma--red\/-red200: #ffdddd;
-    --colors-figma--red\/-red500: #e02d3c;
-    --colors-figma--red\/-red600: #b91c1c;
-    --colors-figma--red\/-red700: #981b25;
-    --colors-figma--green\/-green50: #f5fbf8;
-    --colors-figma--green\/-green100: #e9fdf0;
-    --colors-figma--green\/-green200: #b1f3c8;
-    --colors-figma--green\/-green500: #08875d;
-    --colors-figma--green\/-green600: #04724d;
-    --colors-figma--green\/-green700: #066042;
-    --colors-figma--yellow\/-yellow50: #fffaeb;
-    --colors-figma--yellow\/-yellow100: #fff5d7;
-    --colors-figma--yellow\/-yellow200: #fedf89;
-    --colors-figma--yellow\/-yellow500: #b25e09;
-    --colors-figma--yellow\/-yellow600: #96530f;
-    --colors-figma--yellow\/-yellow700: #80460d;
-    --colors-figma--blue\/-blue50: #f7faff;
-    --colors-figma--blue\/-blue100: #edf3ff;
-    --colors-figma--blue\/-blue200: #b8cfff;
-    --colors-figma--blue\/-blue500: #2f6fed;
-    --colors-figma--u-i\/color\/primary: #6750a3;
+    --colors-figma-hite: #ffffff;
+    --colors-figma--gray50: #f7f8f9;
+    --colors-figma--gray100: #e8ebed;
+    --colors-figma--gray200: #c9cdd2;
+    --colors-figma--gray300: #9ea4aa;
+    --colors-figma--gray400: #72787f;
+    --colors-figma--gray500: #4d5053;
+    --colors-figma--gray600: #3d4043;
+    --colors-figma--black: #1b1d1f;
+    --colors-figma--primary50: #f8f5ff;
+    --colors-figma--primary100: #e2d6ff;
+    --colors-figma--primary200: #c8acff;
+    --colors-figma--primary500: #894fff;
+    --colors-figma--primary600: #6d35de;
+    --colors-figma--primary700: #5221b5;
+    --colors-figma--red50: #fef3f2;
+    --colors-figma--red100: #ffeaea;
+    --colors-figma--red200: #ffdddd;
+    --colors-figma--red500: #e02d3c;
+    --colors-figma--red600: #b91c1c;
+    --colors-figma--red700: #981b25;
+    --colors-figma--green50: #f5fbf8;
+    --colors-figma--green100: #e9fdf0;
+    --colors-figma--green200: #b1f3c8;
+    --colors-figma--green500: #08875d;
+    --colors-figma--green600: #04724d;
+    --colors-figma--green700: #066042;
+    --colors-figma--yellow50: #fffaeb;
+    --colors-figma--yellow100: #fff5d7;
+    --colors-figma--yellow200: #fedf89;
+    --colors-figma--yellow500: #b25e09;
+    --colors-figma--yellow600: #96530f;
+    --colors-figma--yellow700: #80460d;
+    --colors-figma--blue50: #f7faff;
+    --colors-figma--blue100: #edf3ff;
+    --colors-figma--blue200: #b8cfff;
+    --colors-figma--blue500: #2f6fed;
+    --colors-figma--u-iprimary: #6750a3;
     --breakpoints-sm: 640px;
     --breakpoints-md: 768px;
     --breakpoints-lg: 1024px;
@@ -713,7 +713,6 @@
 
 @layer recipes{
   @layer _base{
-
     .button {
       display: flex;
 }
@@ -721,7 +720,7 @@
 
   .button--visual_funky {
     background: var(--colors-red-200);
-    color: primary.500;
+    color: var(--colors-figma--gray300);
     font-weight: var(--font-weights-bold);
 }
 
@@ -731,20 +730,28 @@
     text-decoration: None;
     text-transform: None;
     font-family: Inter;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 34px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
 }
 
   .button--shape_circle {
     border-radius: var(--radii-full);
 }
+
+  .button--visual_edgy {
+    border: 1px solid var(--colors-red-500);
+}
+
+  .button--visual_primary {
+    background: var(--colors-figma--gray300);
+    color: var(--colors-figma--blue200);
+}
 }
 
 @layer utilities{
   @layer compositions{
-
-    .textStyle_Title\/24px\/24px\.700 {
+    .textStyle_title-24-700 {
       letter-spacing: -0.4px;
       text-decoration: None;
       text-transform: None;
@@ -755,12 +762,8 @@
 }
 }
 
-  .c_red {
-    color: red;
-}
-
-  .c_figma\.Grayscale\/Gray400 {
-    color: var(--colors-figma--grayscale\/-gray400);
+  .c_figma\.Gray400 {
+    color: var(--colors-figma--gray400);
 }
 
   .fs_2xl {

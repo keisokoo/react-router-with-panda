@@ -1,5 +1,5 @@
 import { css } from "styled-system/css";
-import { button } from "styled-system/recipes";
+import { Button } from "~/components/button";
 import type { Route } from "./+types/home";
 
 export function meta({}: Route.MetaArgs) {
@@ -16,14 +16,15 @@ export default function Home() {
         className={css({
           fontSize: "2xl",
           fontWeight: "bold",
-          color: "figma.Grayscale/Gray400",
-          textStyle: "Title/24px/24px.700",
+          color: "figma.Gray400",
+          textStyle: "title-24-700",
         })}
       >
         Welcome to the home sdssssxx22
       </h1>
-      <button className={button()}>Click me</button>
-      <button className={button({ shape: "circle" })}>Click me</button>
+      <Button visual={"funky"}>Click me</Button>
+      <Button visual={"edgy"}>Click me</Button>
+      <Button visual={"primary"}>Click me</Button>
     </div>
   );
 }

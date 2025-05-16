@@ -6,7 +6,7 @@ interface ButtonVariant {
   /**
  * @default "funky"
  */
-visual: "funky" | "edgy"
+visual: "funky" | "edgy" | "primary"
 /**
  * @default "sm"
  */

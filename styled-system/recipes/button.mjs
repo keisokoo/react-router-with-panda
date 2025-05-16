@@ -10,7 +10,8 @@ const buttonFn = /* @__PURE__ */ createRecipe('button', {
 const buttonVariantMap = {
   "visual": [
     "funky",
-    "edgy"
+    "edgy",
+    "primary"
   ],
   "size": [
     "sm",
