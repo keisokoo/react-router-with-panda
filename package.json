@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "prepare": "panda codegen",
-    "panda:codegen": "chokidar \"panda.config.ts\" \"themes/**/*\" -c \"pnpm panda codegen\"",
+    "panda:codegen": "panda codegen && chokidar \"panda.config.ts\" \"themes/**/*\" -c \"pnpm panda codegen\"",
     "panda:watch": "panda --watch",
     "build": "react-router build",
     "dev": "react-router dev",

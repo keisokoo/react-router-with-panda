@@ -10,7 +10,7 @@ export const defaultTheme = {
   tokens: {
     colors: {
       figma: {
-        hite: { value: "#ffffff" },
+        white: { value: "#ffffff" },
         Gray50: { value: "#f7f8f9" },
         Gray100: { value: "#e8ebed" },
         Gray200: { value: "#c9cdd2" },
