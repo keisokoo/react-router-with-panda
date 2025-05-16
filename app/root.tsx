@@ -5,6 +5,7 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
+  useLoaderData,
   type LinksFunction,
 } from "react-router";
 
@@ -12,17 +13,43 @@ import type { Route } from "./+types/root";
 
 import stylesheet from "./app.css?url";
 
-export const links: LinksFunction = () => [
-  { rel: "stylesheet", href: stylesheet },
-];
+async function getColorsFromDB() {
+  // 실제 DB 쿼리 로직으로 교체
+  return {
+    "--color-primary": "#3700ff",
+    "--color-secondary": "#ff7700",
+    "--color-tertiary": "#00ff2a",
+    "--color-quaternary": "#00e1ff",
+    "--color-quinary": "#0026ff",
+    "--color-senary": "#d400ff",
+    "--color-septenary": "#f2ff00",
+  };
+}
 
+export async function loader({ request }: Route.LoaderArgs) {
+  const colors = await getColorsFromDB();
+  return colors;
+}
+export const links: LinksFunction = () => {
+  return [{ rel: "stylesheet", href: stylesheet }];
+};
 export function Layout({ children }: { children: React.ReactNode }) {
+  const colors = useLoaderData<typeof loader>();
   return (
-    <html lang="en">
+    <html lang="ko">
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Meta />
+        <style>
+          {`
+:root {
+${Object.entries(colors)
+  .map(([key, value]) => `${key}: ${value};`)
+  .join("\n")}
+}
+          `}
+        </style>
         <Links />
       </head>
       <body>
@@ -65,4 +92,24 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
       )}
     </main>
   );
+}
+function createTheme(arg0: {
+  tokens: {
+    colors: {
+      dd: {
+        primary: { value: any };
+        secondary: { value: any };
+        tertiary: { value: any };
+        quaternary: { value: any };
+        quinary: { value: any };
+        senary: { value: any };
+        septenary: { value: any };
+      };
+    };
+  };
+}) {
+  throw new Error("Function not implemented.");
+}
+function getTheme(): any {
+  throw new Error("Function not implemented.");
 }

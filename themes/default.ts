@@ -1,5 +1,6 @@
 "textStyles";
 
+import { buttonRecipe } from "recipes/button.recipe";
 import { textStyles } from "./textStyles";
 
 export const defaultTheme = {
@@ -9,6 +10,15 @@ export const defaultTheme = {
   // 색상 설정
   tokens: {
     colors: {
+      dd: {
+        primary: { value: "var(--color-primary)" },
+        secondary: { value: "var(--color-secondary)" },
+        tertiary: { value: "var(--color-tertiary)" },
+        quaternary: { value: "var(--color-quaternary)" },
+        quinary: { value: "var(--color-quinary)" },
+        senary: { value: "var(--color-senary)" },
+        septenary: { value: "var(--color-septenary)" },
+      },
       figma: {
         white: { value: "#ffffff" },
         Gray50: { value: "#f7f8f9" },
@@ -49,6 +59,31 @@ export const defaultTheme = {
         Blue500: { value: "#2f6fed" },
         UIprimary: { value: "#6750a3" },
       },
+    },
+  },
+};
+
+export const defaultConfigs = {
+  // Whether to use css reset
+  preflight: true,
+
+  // Where to look for your css declarations
+  include: ["./app/**/{**,.client,.server}/**/*.{js,jsx,ts,tsx}"],
+
+  // Files to exclude
+  exclude: [],
+
+  // The output directory for your css system
+  outdir: "styled-system",
+
+  jsxFramework: "react",
+
+  theme: {
+    extend: {
+      recipes: {
+        button: buttonRecipe,
+      },
+      ...defaultTheme,
     },
   },
 };

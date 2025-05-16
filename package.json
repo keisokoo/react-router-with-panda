@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "prepare": "panda codegen",
+    "prepare": "panda codegen --watch",
     "panda:codegen": "panda codegen && chokidar \"panda.config.ts\" \"themes/**/*\" -c \"panda codegen\"",
     "panda:watch": "panda --watch",
     "build": "react-router build",
