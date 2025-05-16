@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "prepare": "panda codegen",
-    "panda:watch": "bun panda --watch",
+    "panda:codegen": "chokidar \"panda.config.ts\" \"themes/**/*\" -c \"pnpm panda codegen\"",
+    "panda:watch": "panda --watch",
     "build": "react-router build",
     "dev": "react-router dev",
     "start": "react-router-serve ./build/server/index.js",
@@ -26,6 +27,7 @@
     "@types/node": "^20",
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
+    "chokidar-cli": "^3.0.0",
     "tailwindcss": "^4.1.4",
     "typescript": "^5.8.3",
     "vite": "^6.3.3",
