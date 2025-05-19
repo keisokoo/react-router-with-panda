@@ -20,9 +20,9 @@ export default function Home() {
       >
         Welcome to the home sdssssxx22
       </h1>
-      <Button visual={"funky"}>Click me</Button>
-      <Button visual={"edgy"}>Click me</Button>
-      <Button visual={"primary"}>Click me</Button>
+      <Button size={"md"} color={"blue"}>
+        Click me
+      </Button>
     </div>
   );
 }

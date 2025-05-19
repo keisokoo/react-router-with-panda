@@ -3,11 +3,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "prepare": "panda codegen --watch",
-    "panda:codegen": "panda codegen && chokidar \"panda.config.ts\" \"themes/**/*\" -c \"panda codegen\"",
-    "panda:watch": "panda --watch",
+    "prepare": "panda codegen",
     "build": "react-router build",
-    "dev": "react-router dev",
+    "dev": "concurrently -k -n PANDACSS,CODEGEN,DEV -c green,cyan,blue \"panda --watch\" \"panda codegen --watch\" \"react-router dev\"",
     "start": "react-router-serve ./build/server/index.js",
     "typecheck": "react-router typegen && tsc"
   },
@@ -28,6 +26,7 @@
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
     "chokidar-cli": "^3.0.0",
+    "concurrently": "^9.1.2",
     "tailwindcss": "^4.1.4",
     "typescript": "^5.8.3",
     "vite": "^6.3.3",

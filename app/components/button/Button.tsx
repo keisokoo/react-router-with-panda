@@ -1,13 +1,25 @@
+import { cx } from "styled-system/css";
 import { button, type ButtonVariantProps } from "styled-system/recipes";
 
-interface ButtonProps {
-  visual?: ButtonVariantProps["visual"];
-  size?: ButtonVariantProps["size"];
-  shape?: ButtonVariantProps["shape"];
-  children: React.ReactNode;
-}
-export function Button({ children, visual, size, shape }: ButtonProps) {
+type ButtonProps = React.DetailedHTMLProps<
+  React.ButtonHTMLAttributes<HTMLButtonElement>,
+  HTMLButtonElement
+> & {
+  $label?: string;
+} & ButtonVariantProps;
+export function Button({
+  children,
+  color,
+  size,
+  className,
+  $label,
+  ...props
+}: ButtonProps) {
+  const { root, control, label } = button({ size, color });
   return (
-    <button className={button({ visual, size, shape })}>{children}</button>
+    <button className={cx(root, className)}>
+      <label className={label}>{$label}</label>
+      <div className={control}>{children}</div>
+    </button>
   );
 }
